@@ -116,11 +116,25 @@ void exercise_6(int number) {
 }
 
 void exercise_7(double r) {
-  // TODO: YOUR CODE HERE
+   if (r < 0) {
+        cout << "Error: Radio no puede ser negativo" << endl;
+    } else {
+        double area = 4 * M_PI * r * r;
+        cout << area << endl;
+    }
 }
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+      if (seconds < 0) {
+        cout << "Error: Los segundos no pueden ser negativos" << endl;
+    } else {
+        int hours = seconds / 3600;
+        int minutes = (seconds % 3600) / 60;
+        int remaining_seconds = seconds % 60;
+        cout << hours << ":" << minutes << ":" << remaining_seconds << endl;
+    }
+
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
