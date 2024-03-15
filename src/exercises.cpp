@@ -7,48 +7,35 @@ using namespace std;
 
 
 void exercise_1(string s1, string s2, string s3) {
-    string min_string;
-}
-if (s1 <= s2 && s1 <= s3) {
-        min_string = s1;
-    } else if (s2 <= s1 && s2 <= s3) {
+  //your code here
+  string min_string = s1;
+
+    if (s2 < min_string) {
         min_string = s2;
-    } else {
+    }
+
+    if (s3 < min_string) {
         min_string = s3;
     }
 
     cout << min_string << endl;
 }
+
 
 void exercise_2(double A, double B, double C) {
-<<<<<<< HEAD
-  string min_string;
+  //your code here
+   double discriminante = B * B - 4 * A * C;
 
-    if (s1 <= s2 && s1 <= s3) {
-        min_string = s1;
-    } else if (s2 <= s1 && s2 <= s3) {
-        min_string = s2;
+    if (discriminante >= 0) {
+        double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
+        double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
+
+        cout << raiz1 << " " << raiz2 << endl;
     } else {
-        min_string = s3;
+        cout << "No hay raíces reales" << endl;
     }
-
-    cout << min_string << endl;
-
-   double raiz = B * B - 4 * A * C; 
-    
-    if (raiz > 0) { 
-        double raiz1 = (-B + raizCuadrada(raiz)) / (2 * A); 
-        double raiz2 = (-B - raizCuadrada(raiz)) / (2 * A); 
-        cout << "Las raíces son " << raiz1 << " y " << raiz2 << endl; 
-    } 
-} else if (raiz == 0) { 
-        double raiz_unica = -B / (2 * A); 
-        cout << "La única raíz es " << raiz_unica << endl; 
-    } else { 
-        cout << "No hay raíces reales." << endl; 
-    }
->>>>>>> cde39854c6b9653743f1521fd2bcafccc3943c8a
 }
+
 
 
 void exercise_3(int a, int b) {
