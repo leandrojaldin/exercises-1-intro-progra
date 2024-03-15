@@ -40,18 +40,62 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
+  if (b == 0) {
+        cout << "Imposible" << endl;
+    } else {
+        cout << a / b << endl;
+    }
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
+  if (n > b) {
+        n *= 1.0 - y / 100;
+    } else if (n > a) {
+        n *= 1.0 - x / 100;
+    }
+
+    cout << n << endl;
 }
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+  if (isupper(character)) {
+        cout << "mayúscula" << endl;
+    } else if (islower(character)) {
+        cout << "minúscula" << endl;
+    } else {
+        cout << "no alfabético" << endl;
+    }
 }
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
+  switch (number) {
+        case 1:
+            cout << "Lunes" << endl;
+            break;
+        case 2:
+            cout << "Martes" << endl;
+            break;
+        case 3:
+            cout << "Miércoles" << endl;
+            break;
+        case 4:
+            cout << "Jueves" << endl;
+            break;
+        case 5:
+            cout << "Viernes" << endl;
+            break;
+        case 6:
+            cout << "Sábado" << endl;
+            break;
+        case 7:
+            cout << "Domingo" << endl;
+            break;
+        default:
+            cout << "Día inválido" << endl;
+    }
 }
 
 void exercise_7(double r) {
