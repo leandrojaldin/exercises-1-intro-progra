@@ -8,7 +8,8 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   //your code here
-  cout << "Ingrese tres palabras separadas por espacios: ";
+
+    cout << "Ingrese tres palabras separadas por espacios: ";
     getline(cin, s1);
     getline(cin, s2);
     getline(cin, s3);
@@ -28,6 +29,14 @@ void exercise_1(string s1, string s2, string s3) {
 
 
 }
+
+int main() {
+    exercise_1();
+    return 0;
+
+}
+
+
 
 
 void exercise_2(double A, double B, double C) {
