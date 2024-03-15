@@ -144,6 +144,14 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
+   if (a < 0 || b < 0) {
+        return 0;
+    }
+
+    int sum = a + b;
+    int sum_digits = log10(sum) + 1;
+
+    return sum * sum_digits;
 }
 
 string exercise_11(int number) {
