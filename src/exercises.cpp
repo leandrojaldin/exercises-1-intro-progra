@@ -21,6 +21,19 @@ if (s1 <= s2 && s1 <= s3) {
 }
 
 void exercise_2(double A, double B, double C) {
+<<<<<<< HEAD
+  string min_string;
+
+    if (s1 <= s2 && s1 <= s3) {
+        min_string = s1;
+    } else if (s2 <= s1 && s2 <= s3) {
+        min_string = s2;
+    } else {
+        min_string = s3;
+    }
+
+    cout << min_string << endl;
+
    double raiz = B * B - 4 * A * C; 
     
     if (raiz > 0) { 
@@ -34,6 +47,7 @@ void exercise_2(double A, double B, double C) {
     } else { 
         cout << "No hay raíces reales." << endl; 
     }
+>>>>>>> cde39854c6b9653743f1521fd2bcafccc3943c8a
 }
 
 
