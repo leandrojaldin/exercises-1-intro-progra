@@ -151,7 +151,8 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
     char first_char_s1 = s1[0];
     char first_char_s5 = s5[0];
 
-    string first_chars;
+    // Construir la cadena de primeros caracteres
+    string first_chars = "";
     first_chars += first_char_s1;
     first_chars += s2[0];
     first_chars += s3[0];
