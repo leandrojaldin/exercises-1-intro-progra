@@ -188,7 +188,6 @@ string exercise_11(int number) {
         return "Se encontro Fibonacci";
     else
         return "Esto no es de Fibonacci";
-    
 }
 
 void exercise_12(string color1, int numb1,
