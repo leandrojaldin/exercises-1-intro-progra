@@ -138,7 +138,24 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  return "";
+  int fib_prev = 0;
+    int fib_curr = 1;
+
+    if (number == 0 || number == 1) {
+        return "Se encontro Fibonacci";
+    }
+
+    while (fib_curr <= number) {
+        if (fib_curr == number) {
+            return "Se encontro Fibonacci";
+        }
+        
+        int next = fib_prev + fib_curr;
+        fib_prev = fib_curr;
+        fib_curr = next;
+    }
+
+  return "Esto no es de Fibonacci";
 }
 
 void exercise_12(string color1, int numb1,
