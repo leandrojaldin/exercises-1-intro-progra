@@ -148,19 +148,7 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-    char first_char_s1 = s1[0];
-    char first_char_s5 = s5[0];
-
-    // Construir la cadena de primeros caracteres
-    string first_chars = "";
-    first_chars += first_char_s1;
-    first_chars += s2[0];
-    first_chars += s3[0];
-    first_chars += s4[0];
-    first_chars += first_char_s5;
-
-    // Verificar si el primer carácter de la primera y última palabra son iguales
-    if (first_char_s1 == first_char_s5) {
+     if (first_char_s1 == first_char_s5) {
         return first_chars + "\nHemos encontrado algo!";
     } else {
         return first_chars + "\nAun sin suerte";
