@@ -128,8 +128,9 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-     if (a < 0 || b < 0)
-        return 0;
+     if (a < 0 || b < 0){
+          return 0;
+     }
     int sum = a + b;
     int digit_count = (sum == 0) ? 1 : (int)log10(abs(sum)) + 1;
     return sum * digit_count;
@@ -137,12 +138,6 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-     if (number == 11235813){
-        return "Se encontro Fibonacci";
-    }else
-    {
-        return "Esto no es de Fibonacci";
-    }
 }
 
 void exercise_12(string color1, int numb1,
@@ -150,21 +145,6 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-    if ((color1 == "?" || numb1 == -1) ||
-        (color2 == "?" || numb2 == -1) ||
-        (color3 == "?" || numb3 == -1) ||
-        (color4 == "?" || numb4 == -1)) {
-        cout << "Invalid input." << endl;
-        return;
-    }
-
-    bool house1_match = (color1 == color4 || numb1 == numb4);
-    bool house2_match = (color2 == color4 || numb2 == numb4);
-    bool house3_match = (color3 == color4 || numb3 == numb4);
-
-    if (house1_match) cout << "1" << endl;
-    if (house2_match) cout << "2" << endl;
-    if (house3_match) cout << "3" << endl;
 }
 
 string exercise_13(int age, int years_of_experience) {
