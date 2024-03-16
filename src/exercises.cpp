@@ -22,8 +22,6 @@ void exercise_1(string s1, string s2, string s3) {
 
 
 
-
-
 void exercise_2(double A, double B, double C) {
   //your code here
     if (discriminante >= 0) {
