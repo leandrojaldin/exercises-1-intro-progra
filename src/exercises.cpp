@@ -178,11 +178,8 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-      if (isFibonacci(number))
-        return "Se encontro Fibonacci";
-    else
-        return "Esto no es de Fibonacci";
-}
+  return "";
+  }
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
