@@ -18,14 +18,14 @@ void exercise_1(string s1, string s2, string s3) {
 
 
 void exercise_2(double A, double B, double C) {
-    double discr = B*B - 4*A*C;
-    if (discriminante >= 0) {
-        double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
-        double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
-
-        cout << raiz1 << " " << raiz2 << endl;
-    } else {
-        cout << "No hay raíces reales" << endl;
+      double discr = B*B - 4*A*C;
+    if (discr > 0) {
+        double root1 = (-B + sqrt(discr)) / (2*A);
+        double root2 = (-B - sqrt(discr)) / (2*A);
+        cout << root1 << " " << root2 << endl;
+    } else if (discr == 0) {
+        double root = -B / (2*A);
+        cout << root << endl;
     }
 }
 
