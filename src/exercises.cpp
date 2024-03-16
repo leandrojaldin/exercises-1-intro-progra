@@ -119,6 +119,31 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERe
+   if (seconds < 0) {
+        cout << "Error: Input seconds cannot be negative." << endl;
+        return;
+    }
+
+    int hours = seconds / 3600;
+    int remaining_seconds = seconds % 3600;
+    int minutes = remaining_seconds / 60;
+    int remaining_seconds_final = remaining_seconds % 60;
+
+    // Output the result in the format HH:MM:SS
+    if (hours < 10)
+        cout << "0" << hours << ":";
+    else
+        cout << hours << ":";
+    
+    if (minutes < 10)
+        cout << "0" << minutes << ":";
+    else
+        cout << minutes << ":";
+
+    if (remaining_seconds_final < 10)
+        cout << "0" << remaining_seconds_final << endl;
+    else
+        cout << remaining_seconds_final << endl;
 }
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
