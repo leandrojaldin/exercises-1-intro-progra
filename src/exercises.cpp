@@ -119,6 +119,17 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERe
+   if (seconds < 0) {
+        cout << "Error: Input seconds cannot be negative." << endl;
+        return;
+    }
+
+    int hours = seconds / 3600;
+    int remaining_seconds = seconds % 3600;
+    int minutes = remaining_seconds / 60;
+    int remaining_seconds_final = remaining_seconds % 60;
+
+    cout << hours << ":" << minutes << ":" << remaining_seconds_final << endl;
 }
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
@@ -164,19 +175,8 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-    vector<pair<string, int>> houses = {{color1, numb1}, {color2, numb2}, {color3, numb3}};
-    string witness_color = color4;
-    int witness_num_floors = numb4;
+  }
 
-    vector<int> possible_houses;
-
-    // Determinar a qué casas debe ir Martha según el testimonio del testigo
-    for (int i = 0; i < 3; ++i) {
-        if (matches(houses[i].first, houses[i].second, witness_color, witness_num_floors)) {
-            possible_houses.push_back(i + 1);
-        }
-}
-                 }
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
   return "";
