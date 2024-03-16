@@ -124,6 +124,7 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
+  return "";
  }
 
 int exercise_10(int a, int b) {
@@ -138,7 +139,7 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  if (number == 0 || number == 1) {
+    if (number == 0 || number == 1) {
         return "Se encontro Fibonacci";
     }
 
@@ -156,6 +157,7 @@ string exercise_11(int number) {
     }
 
     return "Esto no es de Fibonacci"; 
+    return "";
 }
 
 void exercise_12(string color1, int numb1,
