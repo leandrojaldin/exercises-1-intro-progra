@@ -227,4 +227,3 @@ void exercise_16(int debut, int fin) {
     cout << horas_alta << " hora(s) con el tarifario de " << tarifa_alta << " boliviano(s)" << endl;
     cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
 }
-}
