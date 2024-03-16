@@ -131,10 +131,9 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
     result += s4[0];
     result += s5[0];
     if (s1[0] == s5[0]){
-        result "\nHemos encontrado algo!";
-    }else{
-        result "\nAun sin suerte";
-    }
+        result  "\nHemos encontrado algo!";}
+    else{
+        result  "\nAun sin suerte";}
  }
 
 int exercise_10(int a, int b) {
