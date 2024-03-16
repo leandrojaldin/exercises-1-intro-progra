@@ -16,7 +16,6 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 
-
 void exercise_2(double A, double B, double C) {
       double discr = B*B - 4*A*C;
     if (discr > 0) {
