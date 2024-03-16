@@ -124,16 +124,6 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-      string result = "";
-    result += s1[0];
-    result += s2[0];
-    result += s3[0];
-    result += s4[0];
-    result += s5[0];
-    if (s1[0] == s5[0])
-        result  "\nHemos encontrado algo!";
-    else
-        result  "\nAun sin suerte";
  }
 
 int exercise_10(int a, int b) {
@@ -160,6 +150,29 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
+  if (color1 == "?" || numb1 == -1 || color2 == "?" || numb2 == -1 || color3 == "?" || numb3 == -1 || color4 == "?" || numb4 == -1) {
+        cout << "Invalid input." << endl;
+        return;
+    }
+
+    int house_with_cat = -1;
+    int max_floors = -1;
+
+    if (numb1 > max_floors && color1 == color4) {
+        max_floors = numb1;
+        house_with_cat = 1;
+    }
+    if (numb2 > max_floors && color2 == color4) {
+        max_floors = numb2;
+        house_with_cat = 2;
+    }
+    if (numb3 > max_floors && color3 == color4) {
+        max_floors = numb3;
+        house_with_cat = 3;
+    }
+
+    if (house_with_cat != -1)
+        cout << house_with_cat << endl;
 }
 
 string exercise_13(int age, int years_of_experience) {
