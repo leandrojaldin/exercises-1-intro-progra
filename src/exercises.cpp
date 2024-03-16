@@ -178,7 +178,17 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  return "";
+      int a = 0, b = 1;
+    while (b < number) {
+        int temp = b;
+        b = a + b;
+        a = temp;
+    }
+    if (b == number) {
+        return "Se encontro Fibonacci";
+    } else {
+        return "Esto no es de Fibonacci";
+    }
 }
 
 void exercise_12(string color1, int numb1,
