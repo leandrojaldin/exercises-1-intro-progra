@@ -142,34 +142,11 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-     if (a < 0 || b < 0){
-          return 0;
-     }
-    int sum = a + b;
-    int digit_count = (sum == 0) ? 1 : (int)log10(abs(sum)) + 1;
-    return sum * digit_count;
+  
 }
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  int fib_prev = 0;
-    int fib_curr = 1;
-
-    if (number == 0 || number == 1) {
-        return "Se encontro Fibonacci";
-    }
-
-    while (fib_curr <= number) {
-        if (fib_curr == number) {
-            return "Se encontro Fibonacci";
-        }
-        
-        int next = fib_prev + fib_curr;
-        fib_prev = fib_curr;
-        fib_curr = next;
-    }
-
-  return "Esto no es de Fibonacci";
   return "";
 }
 
