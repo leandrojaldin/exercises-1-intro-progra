@@ -178,17 +178,31 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-    int a = 0, b = 1;
-    while (b < number) {
-        int temp = b;
-        b = a + b;
-        a = temp;
-    }
-    if (b == number) {
+    int prev = 0;
+    int current = 1;
+
+    // Verificamos si el número es uno de los primeros dos números de Fibonacci
+    if (number == prev || number == current) {
         return "Se encontro Fibonacci";
-    } else {
-        return "Esto no es de Fibonacci";
     }
+
+    // Generamos la secuencia de Fibonacci hasta que el número actual sea mayor que el dado
+    while (current <= number) {
+        // Calculamos el siguiente número de Fibonacci
+        int next = prev + current;
+        
+        // Verificamos si el número dado es igual al siguiente número de Fibonacci
+        if (number == next) {
+            return "Se encontro Fibonacci";
+        }
+
+        // Actualizamos los números previos y actuales para el siguiente ciclo
+        prev = current;
+        current = next;
+    }
+
+    // Si el número no se encuentra en la secuencia de Fibonacci, devolvemos "Esto no es de Fibonacci"
+    return "Esto no es de Fibonacci";
 }
 
 void exercise_12(string color1, int numb1,
