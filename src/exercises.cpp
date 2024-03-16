@@ -184,11 +184,11 @@ string exercise_11(int number) {
         b = a + b;
         a = temp;
     }
-    if (b == number) {
+    if (b == number) 
         return "Se encontro Fibonacci";
-    } else {
+    else 
         return "Esto no es de Fibonacci";
-    }
+    
 }
 
 void exercise_12(string color1, int numb1,
