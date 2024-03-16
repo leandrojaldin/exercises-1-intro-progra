@@ -107,6 +107,14 @@ void exercise_6(int number) {
 
 void exercise_7(double r) {
    //codehere
+     if (r>=0)
+  {
+    cout<< 43.14r*r<<endl;
+  }
+  else 
+  {
+    cout << "Error: Radius cannot be negative."<<endl;
+  }
 }
 
 void exercise_8(long int seconds) {
