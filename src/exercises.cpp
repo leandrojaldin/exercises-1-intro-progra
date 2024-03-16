@@ -271,6 +271,36 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
+    if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return;
+    }
+
+    // Verificar si la hora de inicio es igual a la hora de fin
+    if (debut == fin) {
+        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return;
+    }
+
+    // Verificar si la hora de inicio es mayor que la hora de fin
+    if (debut > fin) {
+        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+        return;
+    }
+
+    // Calcular el costo del alquiler
+    int costo_total = 0;
+    int horas_1_bs = 0;
+    int horas_2_bs = 0;
+
+    // Calcular las horas con tarifa de 1 bs y de 2 bs
+    for (int hora = debut; hora < fin; ++hora) {
+        if ((hora >= 0 && hora < 7) || (hora >= 17 && hora < 24)) {
+            horas_1_bs++;
+        } else {
+            horas_2_bs++;
+        }
+}
 }
 
 
