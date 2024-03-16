@@ -166,7 +166,6 @@ string exercise_11(int number) {
     }
 
     return "Esto no es de Fibonacci"; 
-    return "";
 }
 
 void exercise_12(string color1, int numb1,
