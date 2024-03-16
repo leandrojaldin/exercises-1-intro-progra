@@ -203,14 +203,16 @@ string exercise_11(int number) {
     
     // Si el número no está en la secuencia de Fibonacci, devolvemos el mensaje correspondiente
     return "Esto no es de Fibonacci";
-    TEST(Fibo, TestFibo) {
+}
+
+// Pruebas unitarias
+TEST(Fibo, TestFibo) {
     EXPECT_EQ("Esto no es de Fibonacci", exercise_11(11235814));
 }
 
 TEST(Fibo, TestFiboCorrect) {
     EXPECT_EQ("Se encontro Fibonacci", exercise_11(11235813));
 }
-  }
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
