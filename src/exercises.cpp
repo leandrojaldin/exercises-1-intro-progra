@@ -101,7 +101,7 @@ void exercise_6(int number) {
             cout << "Domingo" << endl;
             break;
         default:
-            cout << "Día inválido" << endl;
+            cout << "Invalid input" << endl;
     }
 }
 
