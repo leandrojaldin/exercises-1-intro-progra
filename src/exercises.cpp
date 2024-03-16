@@ -300,7 +300,18 @@ void exercise_16(int debut, int fin) {
         } else {
             horas_2_bs++;
         }
-}
+    }
+
+    // Calcular el costo total
+    costo_total = horas_1_bs + 2 * horas_2_bs;
+
+    // Imprimir el resultado
+    cout << "Has alquilado una bicicleta por" << endl;
+    if (horas_1_bs > 0)
+        cout << horas_1_bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+    if (horas_2_bs > 0)
+        cout << horas_2_bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+    cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
 }
 
 
