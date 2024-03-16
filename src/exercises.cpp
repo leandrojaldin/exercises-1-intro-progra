@@ -17,15 +17,33 @@ void exercise_1(string s1, string s2, string s3) {
 
 
 void exercise_2(double A, double B, double C) {
-      double discr = B*B - 4*A*C;
-    if (discr > 0) {
-        double root1 = (-B + sqrt(discr)) / (2*A);
-        double root2 = (-B - sqrt(discr)) / (2*A);
-        cout << root1 << " " << root2 << endl;
-    } else if (discr == 0) {
-        double root = -B / (2*A);
-        cout << root << endl;
+    double D = B * B - 4 A * C ;
+    if (D > 0 && A != 0)
+    {
+         double d_sqrt = sqrt (D);
+         double x1 = (-B + d_sqrt)  / (2*A);
+         double x2 = (-B - d_sqrt) /  (2*A); 
+         cout<<x1<<" "<<x2<<endl;
     }
+    else if (D==0 && A != 0)
+    {
+    double d_sqrt = sqrt (D);
+    double x1 = (-B + d_sqrt) / (2*A);
+    cout<<x1<<endl;
+    }
+    else if(A==0 && B!=0)
+    {
+          cout<< (-1*(C))/B <<endl; 
+    }
+    else if (A!=0 && B==0 )
+    {
+        cout<< sqrt (C/A) << endl; 
+    }
+    else
+    {
+          cout<<"":
+    }
+
 }
 
 
