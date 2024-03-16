@@ -183,4 +183,41 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
+  const int tarifa_baja = 1; // Tarifa por hora en el rango de 00:00 a 07:00 y de 17:00 a 24:00
+    const int tarifa_alta = 2; // Tarifa por hora en el rango de 07:00 a 17:00
+    
+    int horas_baja = 0, horas_alta = 0;
+
+    // Si las horas de inicio o fin están fuera del rango de 0 a 24, mostrar un mensaje de error y salir
+    if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return;
+    }
+
+    // Calcular el número de horas en el rango de 00:00 a 07:00 y de 17:00 a 24:00
+    if (debut >= 0 && debut < 7)
+        horas_baja += min(7, fin) - debut;
+    if (fin > 17 && fin <= 24)
+        horas_baja += fin - 17;
+
+    // Calcular el número de horas en el rango de 07:00 a 17:00
+    if (debut >= 7 && fin <= 17)
+        horas_alta += fin - debut;
+    else if (debut < 17 && fin > 7)
+        horas_alta += min(17, fin) - 7;
+
+    // Calcular el costo total del alquiler
+    int costo_total = horas_baja * tarifa_baja + horas_alta * tarifa_alta;
+
+    // Si las horas de inicio son iguales a las horas de fin, mostrar un mensaje de error
+    if (debut == fin) {
+        cout << "¡Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return;
+    }
+
+    // Si las horas de inicio son mayores que las horas de fin, mostrar un mensaje de error
+    if (debut > fin) {
+        cout << "¡Que extraño, el inicio del alquiler es después del final..." << endl;
+        return;
+    }
 }
