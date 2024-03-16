@@ -118,21 +118,7 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-    // TODO: YOUR CODE HERe
-        if (seconds < 0) {
-        cout << "Error: Input seconds cannot be negative." << endl;
-        return;
-    }
-
-    int hours = seconds / 3600;
-    int remaining_seconds = seconds % 3600;
-    int minutes = remaining_seconds / 60;
-    int remaining_seconds_final = remaining_seconds % 60;
-
-    // Output the result in the format HH:MM:SS
-    cout << setfill('0') << setw(2) << hours << ":" 
-         << setfill('0') << setw(2) << minutes << ":" 
-         << setfill('0') << setw(2) << remaining_seconds_final << endl;
+  // TODO: YOUR CODE HERe
 }
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
@@ -152,6 +138,24 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
+  int fib_prev = 0;
+    int fib_curr = 1;
+
+    if (number == 0 || number == 1) {
+        return "Se encontro Fibonacci";
+    }
+
+    while (fib_curr <= number) {
+        if (fib_curr == number) {
+            return "Se encontro Fibonacci";
+        }
+        
+        int next = fib_prev + fib_curr;
+        fib_prev = fib_curr;
+        fib_curr = next;
+    }
+
+  return "Esto no es de Fibonacci";
   return "";
 }
 
