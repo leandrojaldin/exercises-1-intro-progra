@@ -106,10 +106,7 @@ void exercise_6(int number) {
 }
 
 void exercise_7(double r) {
-      if (r < 0)
-        cout << "Error: Radius cannot be negative" << endl;
-    else
-        cout << fixed << setprecision(9) << 4.0/3.0 * M_PI * pow(r, 3) << endl;
+   //codehere
 }
 
 void exercise_8(long int seconds) {
