@@ -183,29 +183,30 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-   if (start < 0 || start > 24 || end < 0 || end > 24) {
+  if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
         cout << "Las horas deben estar entre 0 y 24!" << endl;
         return;
     }
-    if (start == end) {
+    
+    // Verificar si la hora de inicio es igual a la hora de finalización
+    if (debut == fin) {
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
         return;
     }
-    if (start > end) {
+    
+    // Verificar si la hora de inicio es posterior a la hora de finalización
+    if (debut > fin) {
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
         return;
     }
 
     int price = 0;
-    if (start >= 0 && start < 7) {
-        price += (7 - start) * 1;
-    } else if (start >= 7 && start < 17) {
-        price += (17 - start) * 2;
-    }
-    if (end > 17) {
-        price += (24 - end) * 1;
-    } else {
-        price += (17 - start) * 2;
+    for (int hour = debut; hour < fin; ++hour) {
+        if ((hour >= 0 && hour < 7) || (hour >= 17 && hour <= 24)) {
+            price += 1; // Tarifa de 1 bs/hora
+        } else {
+            price += 2; // Tarifa de 2 bs/hora
+        }
     }
 
     cout << "El costo del alquiler es: " << price << " bs" << endl;
