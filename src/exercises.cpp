@@ -217,4 +217,3 @@ void exercise_16(int debut, int fin) {
     cout << "El monto total a pagar es de " << costo << " boliviano(s).\n";
 }
 
-}
