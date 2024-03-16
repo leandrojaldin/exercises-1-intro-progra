@@ -148,11 +148,7 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-    if (first_char_s1 == first_char_s5) {
-        return first_chars + "\nHemos encontrado algo!";
-    } else {
-        return first_chars + "\nAun sin suerte";
-    }
+  return"";
 }
 
 
