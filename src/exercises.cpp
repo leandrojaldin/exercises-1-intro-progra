@@ -119,19 +119,21 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-  if (seconds < 0)
-        cout << "Error: Input seconds cannot be negative" << endl;
-    else {
-        int hours = seconds / 3600;
-        int minutes = (seconds % 3600) / 60;
-        int remaining_seconds = seconds % 60;
-        cout << setfill('0') << setw(2) << hours << ":" << setw(2) << minutes << ":" << setw(2) << remaining_seconds << endl;
-    }
 }
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  return "";
+   string result = "";
+    result += s1[0];
+    result += s2[0];
+    result += s3[0];
+    result += s4[0];
+    result += s5[0];
+    if (s1[0] == s5[0])
+        result += "\nHemos encontrado algo!";
+    else
+        result += "\nAun sin suerte";
+    return result;
  }
 
 int exercise_10(int a, int b) {
