@@ -179,6 +179,16 @@ string exercise_14(int number_of_docs) {
 
 void exercise_15(int a, int b, int c) {
   // TODO: YOUR CODE HERE
+   cout << "Los valores son: a = " << a << " b = " << b << " y c = " << c << endl;
+
+    // Intercambiar los valores entre las variables utilizando solo operadores lógicos
+    a = a ^ b ^ c;
+    b = a ^ b ^ c;
+    c = a ^ b ^ c;
+    a = a ^ b ^ c;
+
+    cout << "Permutamos: a => b, b => c, c => a" << endl;
+    cout << "Los valores despues de la permutacion son: a = " << a << " b = " << b << " y c = " << c << endl;
 }
 
 void exercise_16(int debut, int fin) {
