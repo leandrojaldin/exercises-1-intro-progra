@@ -150,29 +150,18 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-  if (color1 == "?" || numb1 == -1 || color2 == "?" || numb2 == -1 || color3 == "?" || numb3 == -1 || color4 == "?" || numb4 == -1) {
+   if (color1 == "?" || color2 == "?" || color3 == "?" || color4 == "?" || numb1 == -1 || numb2 == -1 || numb3 == -1 || numb4 == -1) {
         cout << "Invalid input." << endl;
         return;
     }
 
-    int house_with_cat = -1;
-    int max_floors = -1;
+    bool house1_match = (color1 == color4 || numb1 == numb4);
+    bool house2_match = (color2 == color4 || numb2 == numb4);
+    bool house3_match = (color3 == color4 || numb3 == numb4);
 
-    if (numb1 > max_floors && color1 == color4) {
-        max_floors = numb1;
-        house_with_cat = 1;
-    }
-    if (numb2 > max_floors && color2 == color4) {
-        max_floors = numb2;
-        house_with_cat = 2;
-    }
-    if (numb3 > max_floors && color3 == color4) {
-        max_floors = numb3;
-        house_with_cat = 3;
-    }
-
-    if (house_with_cat != -1)
-        cout << house_with_cat << endl;
+    if (house1_match) cout << "1" << endl;
+    if (house2_match) cout << "2" << endl;
+    if (house3_match) cout << "3" << endl;
 }
 
 string exercise_13(int age, int years_of_experience) {
