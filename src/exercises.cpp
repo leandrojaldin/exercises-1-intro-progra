@@ -117,7 +117,7 @@ void exercise_7(double r) {
   } 
 }
 
-void exercise_8(long int seconds) {
+void exercise_8(long int seconds, int setfill) {
   // TODO: YOUR CODE HERE
     if (seconds < 0) {
         cout << "Error: Input seconds cannot be negative." << endl;
