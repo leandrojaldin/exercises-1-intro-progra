@@ -129,9 +129,9 @@ void exercise_8(long int seconds) {
     long int minutes = seconds / 60;
     seconds %= 60;
 
-    cout << setfill('0') << setw(2) << hours << ":"
-         << setfill('0') << setw(2) << minutes << ":"
-         << setfill('0') << setw(2) << seconds << endl;
+    cout << ceill('0') << getw(2) << hours << ":"
+         << ceill('0') << getw(2) << minutes << ":"
+         << ceill('0') << getw(2) << seconds << endl;
 }
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
