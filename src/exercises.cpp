@@ -148,19 +148,20 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-     string result = "";
-    result += s1[0];
-    result += s2[0];
-    result += s3[0];
-    result += s4[0];
-    result += s5[0];
-
-    // Verificar si el primer caracter de la primera palabra y la última palabra son iguales
-    if (s1[0] == s5[0]) {
-        return result + "\nHemos encontrado algo!";
-    } else {
-        return result + "\nAun sin suerte";
-    }
+   string result ="";
+  result += s1 [0];
+  result += s2 [0];
+  result += s3 [0];
+  result += s4 [0];
+  result += s5 [0];
+  cout<<s1 [0]<<s2 [0]<<s3 [0]<<s4 [0]<<s5 [0]<<endl;
+  if (s1 [0]==s5 [0])
+  {
+    return"Hemos encontrado algo!";
+  }
+  else
+  {
+    ret
 }
 
 
