@@ -178,7 +178,7 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-      int a = 0, b = 1;
+    int a = 0, b = 1;
     while (b < number) {
         int temp = b;
         b = a + b;
