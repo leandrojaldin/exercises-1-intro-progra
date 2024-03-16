@@ -111,15 +111,18 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-      if (seconds < 0) {
-        cout << "Error: Los segundos no pueden ser negativos" << endl;
-    } else {
-        int hours = seconds / 3600;
-        int minutes = (seconds % 3600) / 60;
-        int remaining_seconds = seconds % 60;
-        cout << hours << ":" << minutes << ":" << remaining_seconds << endl;
+  if (segundos < 0) {
+        cout << "Error: La cantidad de segundos no puede ser negativo." << endl;
+        return 1;
     }
 
+    // Calcular horas, minutos y segundos
+    int horas = segundos / 3600;
+    int minutos = (segundos % 3600) / 60;
+    int segundos_restantes = segundos % 60;
+
+    // Mostrar el tiempo
+    cout << "El tiempo es: " << horas << " horas, " << minutos << " minutos y " << segundos_restantes << " segundos." << endl;
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
