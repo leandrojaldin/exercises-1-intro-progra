@@ -164,8 +164,19 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-}
+    vector<pair<string, int>> houses = {{color1, numb1}, {color2, numb2}, {color3, numb3}};
+    string witness_color = color4;
+    int witness_num_floors = numb4;
 
+    vector<int> possible_houses;
+
+    // Determinar a qué casas debe ir Martha según el testimonio del testigo
+    for (int i = 0; i < 3; ++i) {
+        if (matches(houses[i].first, houses[i].second, witness_color, witness_num_floors)) {
+            possible_houses.push_back(i + 1);
+        }
+}
+                 }
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
   return "";
@@ -183,37 +194,6 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-      if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
-        cout << "Las horas deben estar entre 0 y 24!" << endl;
-        return;
-    }
-    
-    // Verificar si la hora de inicio es igual a la hora de finalización
-    if (debut == fin) {
-        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-        return;
-    }
-    
-    // Verificar si la hora de inicio es posterior a la hora de finalización
-    if (debut > fin) {
-        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
-        return;
-    }
-
-    int price = 0;
-    int hour = debut;
-    while (hour < fin) {
-        if ((hour >= 0 && hour < 7) || (hour >= 17 && hour < 24)) {
-            price += 1; // Tarifa de 1 bs/hora
-        } else {
-            price += 2; // Tarifa de 2 bs/hora
-        }
-        hour++;
-    }
-
-    cout << "Haz alquilado una bicicleta por" << endl;
-    cout << (fin - debut) << " hora(s) con el tarifario de " << (price / (fin - debut)) << " boliviano(s)" << endl;
-    cout << "El monto total a pagar es de " << price << " boliviano(s)." << endl;
 }
 
 
