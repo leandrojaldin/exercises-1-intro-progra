@@ -106,12 +106,10 @@ void exercise_6(int number) {
 }
 
 void exercise_7(double r) {
-   if (r < 0) {
-        cout << "Error: Radio no puede ser negativo" << endl;
-    } else {
-        double area = 4 * M_PI * r * r;
-        cout << area << endl;
-    }
+      if (r < 0)
+        cout << "Error: Radius cannot be negative" << endl;
+    else
+        cout << fixed << setprecision(9) << 4.0/3.0 * M_PI * pow(r, 3) << endl;
 }
 
 void exercise_8(long int seconds) {
