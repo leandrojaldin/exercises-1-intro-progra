@@ -80,25 +80,25 @@ void exercise_6(int number) {
   // TODO: YOUR CODE HERE
   switch (number) {
         case 1:
-            cout << "Lunes" << endl;
+            cout << "Monday" << endl;
             break;
         case 2:
-            cout << "Martes" << endl;
+            cout << "Tuesday" << endl;
             break;
         case 3:
-            cout << "Miércoles" << endl;
+            cout << "Wednesday" << endl;
             break;
         case 4:
-            cout << "Jueves" << endl;
+            cout << "Thursday" << endl;
             break;
         case 5:
-            cout << "Viernes" << endl;
+            cout << "Friday" << endl;
             break;
         case 6:
-            cout << "Sábado" << endl;
+            cout << "Saturday" << endl;
             break;
         case 7:
-            cout << "Domingo" << endl;
+            cout << "sunday" << endl;
             break;
         default:
             cout << "Invalid input" << endl;
