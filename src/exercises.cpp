@@ -159,13 +159,8 @@ string exercise_11(int number) {
         if (fib_curr == number) {
             return "Se encontro Fibonacci";
         }
-        
-        int next = fib_prev + fib_curr;
-        fib_prev = fib_curr;
-        fib_curr = next;
-    }
-
-    return "Esto no es de Fibonacci"; 
+        else {
+            return "Esto no es de Fibonacci"; }
 }
 
 void exercise_12(string color1, int numb1,
