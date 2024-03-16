@@ -148,8 +148,7 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-      // Obtener el primer carácter de cada palabra
-          char first_char_s1 = s1[0];
+    char first_char_s1 = s1[0];
     char first_char_s5 = s5[0];
 
     string first_chars;
@@ -166,6 +165,7 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
         return first_chars + "\nAun sin suerte";
     }
 }
+
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
