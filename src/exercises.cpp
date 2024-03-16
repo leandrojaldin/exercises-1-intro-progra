@@ -224,13 +224,15 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
-      if (number_of_docs == 0) {
+       if (number_of_docs < 0) {
+        return "No se encontraron documentos";
+    } else if (number_of_docs == 0) {
         return "No se encontraron documentos";
     } else if (number_of_docs == 1) {
         return "Se encontro un documento";
     } else {
         return to_string(number_of_docs) + " documentos encontrados";
-    }
+    } 
 }
 
 void exercise_15(int a, int b, int c) {
