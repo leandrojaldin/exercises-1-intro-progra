@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 void exercise_1(string s1, string s2, string s3) {
   //your code here
     if (s1 < s2 && s1 < s3) {
