@@ -68,14 +68,12 @@ void exercise_4(double n, double a, double b, double x, double y) {
 }
 
 void exercise_5(char character) {
-  // TODO: YOUR CODE HERE
-  if (isupper(character)) {
-        cout << "mayúscula" << endl;
-    } else if (islower(character)) {
-        cout << "minúscula" << endl;
-    } else {
-        cout << "no alfabético" << endl;
-    }
+    if (isupper(character))
+        cout << "upper-case alphabet" << endl;
+    else if (islower(character))
+        cout << "lower-case alphabet" << endl;
+    else
+        cout << "not an alphabet" << endl;
 }
 
 void exercise_6(int number) {
