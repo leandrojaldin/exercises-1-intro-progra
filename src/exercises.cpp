@@ -148,7 +148,7 @@ void exercise_8(long int seconds) {
 
 string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-   string result ="";
+  string result ="";
   result += s1 [0];
   result += s2 [0];
   result += s3 [0];
@@ -161,7 +161,8 @@ string exercise_9 (string s1, string s2, string s3, string s4, string s5) {
   }
   else
   {
-    ret
+    return"Aun sin suerte";
+  }  
 }
 
 
